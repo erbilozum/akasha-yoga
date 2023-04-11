@@ -78,6 +78,7 @@ const Homepage = () => {
     return (
         <div name={"home"} className="container mx-auto select-none font-Philosopher" >
             <div className=" ">
+
                 <Carousel
                     showArrows={false}
                     showStatus={false}

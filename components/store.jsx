@@ -1,24 +1,40 @@
 import React, { useEffect, useState } from 'react'
-import Image from 'next/image';
-import StoreCard from './storeCard';
+import ProductCard from './productCard';
 
 const Store = () => {
     const data = [
         {
             id: 1,
-            name: "Yoga Mat",
-            brand: "Ako Yoga",
+            name: "Yoga Matı",
+            brand: "Akasha Brand",
             size: "60 x 183 cm",
             price: "250₺",
             imageUrl: "/store/yoga-mat-thumbnail.png"
         },
         {
             id: 1,
-            name: "Yoga Towel",
-            brand: "Ako Yoga",
+            name: "Yoga Havlusu",
+            brand: "Akasha Brand",
             size: "185 x 63 cm",
             price: "380₺",
             imageUrl: "/store/yoga-towel-thumbnail.png"
+        }
+        ,
+        {
+            id: 3,
+            name: "Mat Çantası",
+            brand: "Akasha Brand",
+            size: "89 x 48 cm",
+            price: "450₺",
+            imageUrl: "/store/yoga-bag-thumbnail.png"
+        },
+        {
+            id: 4,
+            name: "Swing Kemeri",
+            brand: "Akasha Brand",
+            size: "120cm",
+            price: "600₺",
+            imageUrl: "/store/yoga-swing-belt-thumbnail.png"
         }
 
     ];
@@ -29,39 +45,9 @@ const Store = () => {
                 <h2 className={"text-4xl font-Avanir "}>Ürünlerimiz</h2>
                 <p className={"text-sm font-Poppins"}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, enim?</p>
             </div >
-
-
-
-
-
-
-            <StoreCard />
-
-
-
-
-
-
-
-
             <div className='flex flex-row space-x-4 items-center justify-center font-NotoSans'>
                 {data.map((item, index) => (
-                    <div key={index} >
-                        <div className='flex flex-col'>,
-                            <div>
-                                <Image src={item.imageUrl} alt={item.name} title={item.name} width={"241"} height={"241"} />
-                                <div className={"w-full h-4 bg-red-500"}></div>
-                            </div>
-
-
-                            <div className='text-center'>
-                                <span>{item.name}</span>
-                                <div className={" border-b h-1 w-full"}></div>
-                                <span className=''>{item.price}</span>
-                            </div>
-                        </div>
-
-                    </div>
+                    <ProductCard key={index} data={item} />
                 ))}
             </div>
 

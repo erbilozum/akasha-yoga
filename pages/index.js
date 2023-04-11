@@ -22,6 +22,7 @@ export default function Home() {
       <Prices />
       <Classroom />
       <Youtube />
+      <Store />
       <Contact />
       <Footer />
     </main>
