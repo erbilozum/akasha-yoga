@@ -40,6 +40,11 @@ const Header = () => {
                                 </Link>
                             </li>
                             <li className='bg-white px-2  pt-5 pb-2 hover:bg-[#e7c100] duration-500 ease-in-out transition-all'>
+                                <Link activeClass="active" to="store" spy={true} smooth={true} offset={50} duration={500} >
+                                    <span className='cursor-pointer text-lg text-gray-700 hover:text-white'>Ürünler</span>
+                                </Link>
+                            </li>
+                            <li className='bg-white px-2  pt-5 pb-2 hover:bg-[#e7c100] duration-500 ease-in-out transition-all'>
                                 <Link activeClass="active" to="youtube" spy={true} smooth={true} offset={50} duration={500} >
                                     <span className='cursor-pointer text-lg text-gray-700 hover:text-white'>Youtube</span>
                                 </Link>
