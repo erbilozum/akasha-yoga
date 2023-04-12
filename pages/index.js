@@ -9,6 +9,7 @@ import Footer from "@/components/footer";
 import Homepage from "@/components/homepage";
 import Youtube from "@/components/youtube";
 import Store from "@/components/store";
+import Schedule from "@/components/schedule";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,6 +21,7 @@ export default function Home() {
       <About />
       <Comments />
       <Prices />
+      <Schedule />
       <Classroom />
       <Youtube />
       <Store />

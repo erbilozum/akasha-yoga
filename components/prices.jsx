@@ -71,21 +71,21 @@ const Prices = () => {
         }
     ]
     return (
-        <div name={"prices"} className={"container mx-auto px-4 mb-10"}>
-            <div className={" tracking-widest uppercase text-center mt-10 mb-8"}>
-                <h2 className={"text-4xl font-Avanir "}>Sınıflarımız</h2>
-                    <p className={"text-sm font-Poppins"}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, enim?</p>
+        <div name={"prices"} className={"container mx-auto px-4 mb-10 select-none"}>
+            <div className={"tracking-widest uppercase text-center mt-10 mb-8"}>
+                <h2 className={"text-4xl font-Avanir"}>Sınıflarımız</h2>
+                <p className={"text-sm font-Poppins"}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, enim?</p>
             </div>
             <div className={"flex flex-row justify-center mb-10 space-x-6"}>
                 {data.map((item, index) => (
-                    <div key={index} className='border hover:bg-[gray-100] duration-500 ease-in-out transition-all bg-white border-gray-200 rounded-b-xl shadow-xl w-1/4 '>
+                    <div key={index} className='border hover:bg-[gray-100] duration-500 ease-in-out transition-all bg-white border-gray-200 rounded-b-xl shadow-xl w-1/4'>
                         <div className={`h-2 w-full text-[${item.colorCode}] bg-[${item.colorCode}]`}></div>
                         <div className='px-6'>
                             <div className={"flex flex-col items-center justify-center mt-4 font-Philosopher"}>
                                 <Image src={item.imageURL} alt="logo4" width={60} height={60} />
                                 <h2 className={`text-xl text-[${item.colorCode}] font-bold mt-4 mb-4`}>{item.headerTop}</h2>
                                 <h2 className={`text-3xl  text-[${item.colorCode}] mb-2 font-bold`}>{item.headerSub} <span className='text-sm'>/ay</span></h2>
-                                <button className={`bg-[${item.colorCode}] text-white opacity-40 hover:opacity-80 w-full mx-4 py-3 mb-10 mt-10 border  hover:text-gray-100 font-bold duration-500 transition ease-in-out`}>Teklif İste</button>
+                                <button className={`bg-[${item.colorCode}] text-white opacity-40 hover:opacity-80 w-full mx-4 py-3 mb-10 mt-10 border hover:text-gray-100 font-bold duration-500 transition ease-in-out`}>Teklif İste</button>
                             </div>
 
                             {
@@ -98,9 +98,8 @@ const Prices = () => {
                                     </div>
                                 ))
                             }
-                        </div></div>
-
-
+                        </div>
+                    </div>
                 ))}
 
             </div>

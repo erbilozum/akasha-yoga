@@ -1,10 +1,8 @@
 import React from 'react'
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Parallax } from 'react-parallax';
 
 const Youtube = () => {
-
     const data = [
         {
             id: 1,
@@ -58,8 +56,8 @@ const Youtube = () => {
         },
     ]
     return (
-        <div name={"youtube"} className={"container mx-auto px-4 mb-10"}>
-            <div className={"tracking-widest uppercase text-center mt-10 mb-8 "}>
+        <div name={"youtube"} className={"container mx-auto px-4 mb-10 select-none"}>
+            <div className={"tracking-widest uppercase text-center mt-10 mb-8"}>
                 <h2 className={"text-4xl font-Avanir "}>Youtube Çalışmalarımız</h2>
                 <p className={"text-sm font-Poppins"}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, enim?</p>
             </div >
@@ -80,18 +78,13 @@ const Youtube = () => {
                             <div className={"flex w-1/2 items-center justify-center flex-col"}>
                                 <iframe width="340" height="360" src={item.link} title="Ujjayi Pranayama | Stres, Kaygı ve Endişeyi Azalt!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                                 <span className='text-lg'>{item.description}</span>
-
                             </div>
-                            <div className='flex justify-center text-center mt-2    font-bold text-gray-700'>
+                            <div className='flex justify-center text-center mt-2 font-bold text-gray-700'>
                             </div>
                         </div>
                     </div>
                 ))}
-
-
-
             </Carousel >
-
         </div>
     )
 }

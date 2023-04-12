@@ -23,7 +23,7 @@ const Comments = () => {
     {
         id: 2,
         imageUrl: '/customers/human2.jpg',
-        fullName: 'Asuman KRAUSE',
+        fullName: 'Zeynep TOKUŞ',
         comment: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit laborum dolores asperiores id dolorem odio eaque explicabo impedit similique ducimus ad quae magnam eos magni possimus blanditiis, et ullam qui!   '
     },
     {
@@ -39,7 +39,7 @@ const Comments = () => {
         comment: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit laborum dolores asperiores id dolorem odio eaque explicabo impedit similique ducimus ad quae magnam eos magni possimus blanditiis, et ullam qui!   '
     }]
     return (
-        <div name={"comments"} className={"container mx-auto px-4 mb-10"}>
+        <div name={"comments"} className={"container mx-auto px-4 mb-10 select-none"}>
             <div className={"tracking-widest uppercase text-center mt-10 mb-8"}>
                 <h2 className={"text-4xl font-Avanir "}>Öğrencilerimizden</h2>
                 <p className={"text-sm font-Poppins"}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, enim?</p>
@@ -58,7 +58,7 @@ const Comments = () => {
                 >
                     {data.map((item, index) =>
                     (
-                        <div key={index} className="flex flex-row justfiy-center" >
+                        <div key={index} className="border-2 border-gray-400 rounded-xl p-4 flex flex-row justfiy-center" >
                             {/*Image*/}
                             <div className="flex items-center justify-center w-2/12">
                                 <Image
@@ -66,7 +66,6 @@ const Comments = () => {
                                     className="rounded-full"
                                     src={item.imageUrl}
                                     alt={item.fullName}
-
                                     width={800}
                                     height={800}
                                 />
@@ -80,11 +79,9 @@ const Comments = () => {
                                     {item.comment}
                                 </span>
                             </div>
-
                         </div>
                     ))
                     }
-
                 </Carousel >
             </div >
         </div >
