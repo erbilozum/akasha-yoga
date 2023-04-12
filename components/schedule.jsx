@@ -89,7 +89,7 @@ const schedule = () => {
 
 
     return (
-        <div name={"prices"} className={"container mx-auto px-4 mb-10 select-none"}>
+        <div name={"schedule"} className={"container mx-auto px-4 mb-10 select-none"}>
             <div className={"tracking-widest uppercase text-center mt-10 mb-8"}>
                 <h2 className={"text-4xl font-Avanir"}>Çalışma Takvimi</h2>
                 <p className={"text-sm font-Poppins"}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, enim?</p>
