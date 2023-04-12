@@ -35,12 +35,28 @@ const Store = () => {
             size: "120cm",
             price: "600₺",
             imageUrl: "/store/yoga-swing-belt-thumbnail.png"
-        }
 
+        },
+        {
+            id: 5,
+            name: "Yoga Kemeri",
+            brand: "Akasha Brand",
+            size: "180cm",
+            price: "120₺",
+            imageUrl: "/store/yoga-belt-thumbnail.png"
+        },
+        {
+            id: 6,
+            name: "Göz Bandı",
+            brand: "Akasha Brand",
+            size: "29",
+            price: "95₺",
+            imageUrl: "/store/yoga-eye-with-lavander-thumbnail.png"
+        }
     ];
 
     return (
-        <div name={"store"} className={"container mx-auto px-4 mb-10 bg-white"}>
+        <div name={"store"} className={"container mx-auto px-4 mb-10 bg-white select-none"}>
             <div className={"tracking-widest uppercase text-center mt-10 mb-8 "}>
                 <h2 className={"text-4xl font-Avanir "}>Ürünlerimiz</h2>
                 <p className={"text-sm font-Poppins"}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, enim?</p>
