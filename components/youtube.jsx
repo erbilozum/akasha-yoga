@@ -56,9 +56,9 @@ const Youtube = () => {
         },
     ]
     return (
-        <div name={"youtube"} className={"container mx-auto px-4 mb-10 select-none"}>
-            <div className={"tracking-widest uppercase text-center mt-10 mb-8"}>
-                <h2 className={"text-4xl font-Avanir "}>Youtube Çalışmalarımız</h2>
+        <div name={"youtube"} className={"container mx-auto px-4 select-none z-10"}>
+            <div className={"tracking-widest uppercase text-center mt-10 "}>
+                <h2 className={"text-3xl font-Avanir "}>Youtube Çalışmalarımız</h2>
                 <p className={"text-sm font-Poppins"}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, enim?</p>
             </div >
             <Carousel
@@ -66,7 +66,7 @@ const Youtube = () => {
                 showStatus={false}
                 showIndicators
                 infiniteLoop={true}
-                showThumbs={true}
+                showThumbs={false}
                 useKeyboardArrows={true}
                 autoPlay={true}
                 stopOnHover={true}
@@ -75,11 +75,11 @@ const Youtube = () => {
                 {data.map((item, index) => (
                     < div key={index} className='flex flex-row items-center justify-center'>
                         <div className={"flex flex-col w-full items-center justify-center font-NatoSans"}>
-                            <div className={"flex w-1/2 items-center justify-center flex-col"}>
-                                <iframe width="340" height="360" src={item.link} title="Ujjayi Pranayama | Stres, Kaygı ve Endişeyi Azalt!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                                <span className='text-lg'>{item.description}</span>
+                            <div className={"flex w-full sm:w-4/6 items-center justify-center flex-col"}>
+                                <iframe className='aspect-video' src={item.link} title="Ujjayi Pranayama | Stres, Kaygı ve Endişeyi Azalt!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                <span className='text-lg mb-4 font-bold uppercase text-gray-700'>{item.description}</span>
                             </div>
-                            <div className='flex justify-center text-center mt-2 font-bold text-gray-700'>
+                            <div className='flex justify-center text-center mt-2 '>
                             </div>
                         </div>
                     </div>

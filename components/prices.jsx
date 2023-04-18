@@ -1,6 +1,9 @@
 import React from 'react'
 import { FaCheck } from 'react-icons/fa'
 import Image from 'next/image';
+import PriceCardSmall from './UI/priceCardSmall';
+import PriceCardBig from './UI/PriceCardBig';
+
 const Prices = () => {
     const data = [
         {
@@ -13,7 +16,7 @@ const Prices = () => {
                 "Yoga nedir?",
                 "Nefes nedir?",
                 "Meditasyon nedir?",
-                "    Yoga kursu tadında pozlara doğru nasıl girilir?",
+                "Yoga kursu tadında pozlara doğru nasıl girilir?",
                 "Aya Selam, Güneşe Selam A ve B",
                 " Fasya, Bedenini farket ve daha teknik bilgiler."
             ]
@@ -58,7 +61,7 @@ const Prices = () => {
             id: 4,
             colorCode: "#1FB6EB",
             imageURL: '/prices/yoga_hub4.png',
-            headerTop: 'Online Yoga Eğitimi',
+            headerTop: 'Online',
             headerSub: "8 Saat",
             items: [
                 "İndirilebilir içerik",
@@ -71,38 +74,40 @@ const Prices = () => {
         }
     ]
     return (
-        <div name={"prices"} className={"container mx-auto px-4 mb-10 select-none"}>
-            <div className={"tracking-widest uppercase text-center mt-10 mb-8"}>
-                <h2 className={"text-4xl font-Avanir"}>Sınıflarımız</h2>
-                <p className={"text-sm font-Poppins"}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, enim?</p>
-            </div>
-            <div className={"flex flex-row justify-center mb-10 space-x-6"}>
-                {data.map((item, index) => (
-                    <div key={index} className='border hover:bg-[gray-100] duration-500 ease-in-out transition-all bg-white border-gray-200 rounded-b-xl shadow-xl w-1/4'>
-                        <div className={`h-2 w-full text-[${item.colorCode}] bg-[${item.colorCode}]`}></div>
-                        <div className='px-6'>
-                            <div className={"flex flex-col items-center justify-center mt-4 font-Philosopher"}>
-                                <Image src={item.imageURL} alt="logo4" width={60} height={60} />
-                                <h2 className={`text-xl text-[${item.colorCode}] font-bold mt-4 mb-4`}>{item.headerTop}</h2>
-                                <h2 className={`text-3xl  text-[${item.colorCode}] mb-2 font-bold`}>{item.headerSub} <span className='text-sm'>/ay</span></h2>
-                                <button className={`bg-[${item.colorCode}] text-white opacity-40 hover:opacity-80 w-full mx-4 py-3 mb-10 mt-10 border hover:text-gray-100 font-bold duration-500 transition ease-in-out`}>Teklif İste</button>
-                            </div>
-
-                            {
-                                item.items.map((subItem, index) => (
-                                    <div key={index} className={"flex flex-row justfiy-between items-center mb-2"}>
-                                        <FaCheck className={`text-[${item.colorCode}] text-md`} />
-                                        <p className={"px-2 text-gray-700 text-sm"}>
-                                            {subItem}
-                                        </p>
-                                    </div>
-                                ))
-                            }
+        <div name={"prices"} className={"h-screen container mx-auto px-4 select-none"}>
+            <div className={"hidden sm:block sm:visible "}>
+                {/*Header*/}
+                <div className={"tracking-widest uppercase text-center mt-10"}>
+                    <h2 className={"text-3xl font-Avanir"}>Sınıflarımız</h2>
+                    <p className={"text-sm font-Poppins"}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, enim?</p>
+                </div>
+                {/*Content*/}
+                <div className={"flex flex-col sm:flex-row justify-center items-stretch mb-10 sm:space-x-6"}>
+                    {data.map((item, index) => (
+                        <div key={index} className={"w-full sm:w-1/4 flex items-stretch mb-2"}>
+                            <PriceCardBig data={item} />
                         </div>
-                    </div>
-                ))}
-
+                    ))
+                    }
+                </div>
             </div>
+            <div className={"visible  sm:hidden"}>
+                {/*Header*/}
+                <div className={"tracking-widest uppercase text-center mt-10"}>
+                    <h2 className={"text-3xl font-Avanir"}>Sınıflarımız</h2>
+                    <p className={"text-sm font-Poppins"}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, enim?</p>
+                </div>
+                {/*Content*/}
+                <div className={"flex flex-col sm:flex-row justify-center items-stretch mb-10 sm:space-x-6"}>
+                    {data.map((item, index) => (
+                        <div key={index} className={"w-full sm:w-1/4 flex items-stretch mb-2"}>
+                            <PriceCardSmall data={item} />
+                        </div>
+                    ))
+                    }
+                </div>
+            </div>
+
         </div >
     )
 }

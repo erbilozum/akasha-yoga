@@ -10,7 +10,7 @@ import Homepage from "@/components/homepage";
 import Youtube from "@/components/youtube";
 import Store from "@/components/store";
 import Schedule from "@/components/schedule";
-
+import Test from "@/components/test";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {

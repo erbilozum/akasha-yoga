@@ -1,5 +1,5 @@
 import React from 'react'
-import ProductCard from './productCard';
+import ProductCard from './UI/productCard';
 
 const Store = () => {
     const data = [
@@ -8,9 +8,9 @@ const Store = () => {
             productCode: "AKASHA-212921",
             name: "Yoga Matı",
             brand: "Akasha Brand",
-            size: "60 x 183 cm",
+            size: "60 x 183cm",
             price: "250₺",
-            imageUrl: "/store/yoga-mat-thumbnail.png",
+            imageUrl: "/store/yoga-mat-thumbnail.webp",
             imageAlt: "yoga_mat",
         },
         {
@@ -18,9 +18,9 @@ const Store = () => {
             productCode: "AKASHA-212922",
             name: "Yoga Havlusu",
             brand: "Akasha Brand",
-            size: "185 x 63 cm",
+            size: "185 x 63cm",
             price: "380₺",
-            imageUrl: "/store/yoga-towel-thumbnail.png",
+            imageUrl: "/store/yoga-towel-thumbnail.webp",
             imageAlt: "yoga_towel"
         }
         ,
@@ -29,9 +29,9 @@ const Store = () => {
             productCode: "AKASHA-212923",
             name: "Mat Çantası",
             brand: "Akasha Brand",
-            size: "89 x 48 cm",
+            size: "89 x 48cm",
             price: "450₺",
-            imageUrl: "/store/yoga-bag-thumbnail.png",
+            imageUrl: "/store/yoga-bag-thumbnail.webp",
             imageAlt: "yoga_bag"
         },
         {
@@ -41,7 +41,7 @@ const Store = () => {
             brand: "Akasha Brand",
             size: "120cm",
             price: "600₺",
-            imageUrl: "/store/yoga-swing-belt-thumbnail.png",
+            imageUrl: "/store/yoga-swing-belt-thumbnail.webp",
             imageAlt: "yoga_swing_belt"
         },
         {
@@ -51,7 +51,7 @@ const Store = () => {
             brand: "Akasha Brand",
             size: "180cm",
             price: "120₺",
-            imageUrl: "/store/yoga-belt-thumbnail.png",
+            imageUrl: "/store/yoga-belt-thumbnail.webp",
             imageAlt: "yoga_belt"
         },
         {
@@ -61,18 +61,19 @@ const Store = () => {
             brand: "Akasha Brand",
             size: "29",
             price: "95₺",
-            imageUrl: "/store/yoga-eye-with-lavander-thumbnail.png",
+            imageUrl: "/store/yoga-eye-with-lavander-thumbnail.webp",
             imageAlt: "yoga_eye_lavander"
         }
     ];
 
     return (
-        <div name={"store"} className={"container mx-auto px-4 mb-10 bg-white select-none"}>
+        <div name={"store"} className={"container mx-auto text-gray-400 select-none items-center"} >
             <div className={"tracking-widest uppercase text-center mt-10 mb-8"}>
-                <h2 className={"text-4xl font-Avanir"}>Ürünlerimiz</h2>
+                <h2 className={"text-3xl font-Avanir"}>Ürünlerimiz</h2>
                 <p className={"text-sm font-Poppins"}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, enim?</p>
             </div >
-            <div className='flex flex-row space-x-4 items-center justify-center font-NotoSans'>
+
+            <div className='flex flex-wrap sm:flex-nowrapflex-row space-x-4 items-center justify-center font-NotoSans'>
                 {data.map((item, index) => (
                     <ProductCard key={index} data={item} />
                 ))}

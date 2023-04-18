@@ -41,6 +41,9 @@ module.exports = {
       colors: {
         logo1: "#A95394",
       },
+      animation: {
+        "ping-slow": "ping 3s linear infinite",
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

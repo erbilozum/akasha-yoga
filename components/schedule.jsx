@@ -89,43 +89,48 @@ const schedule = () => {
 
 
     return (
-        <div name={"schedule"} className={"container mx-auto px-4 mb-10 select-none"}>
-            <div className={"tracking-widest uppercase text-center mt-10 mb-8"}>
-                <h2 className={"text-4xl font-Avanir"}>Çalışma Takvimi</h2>
-                <p className={"text-sm font-Poppins"}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, enim?</p>
+        <div name={"schedule"} className={"container mx-auto  px-4 select-none z-10 mt:96 sm:mt-0"}>
+            <div className='flex flex-col'>
+                <div className={"tracking-widest uppercase text-center mt-10 mb-8"}>
+                    <h2 className={"text-3xl font-Avanir"}>Çalışma Takvimi</h2>
+                    <p className={"text-sm font-Poppins"}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, enim?</p>
+                </div>
+                <div className={"flex flex-row justify-center mb-10 "}>
+                    <FullCalendar
+                        initialEvents={events} // alternatively, use the `events` setting to fetch from a feed
+                        plugins={[dayGridPlugin, timeGridPlugin, momentPlugin, interactionPlugin, momentTimezonePlugin, bootstrap5Plugin]}
+                        headerToolbar={{
+                            start: 'title', // will normally be on the left. if RTL, will be on the right
+                            center: '',
+                            end: 'today prev,next' // will normally be on the right. if RTL, will be on the left
+                        }}
+                        buttonIcons={{
+                            prev: 'chevron-left',
+                            next: 'chevron-right',
+                            prevYear: 'chevrons-left', // double chevron
+                            nextYear: 'chevrons-right' // double chevron
+                        }}
+                        timeZone='Europe/Istanbul'
+                        initialView='timeGridWeek'
+                        titleFormat='MMMM D, YYYY'
+                        locale='tr'
+                        firstDay='1'
+                        //expandRows={false}
+                        height={"auto"}
+                        //  contentHeight={100}
+                        aspectRatio={2}
+                        contentHeight={400}
+                        expandRows={false}
+                        themeSystem='bootstrap5'
+                        scrollTime={'17:00:00'}
+                        slotMinTime={"14:00:00"}
+                        slotMaxTime={"21:00:00"}
+                        allDaySlot={false}
+                        allDayText='Tüm Gün'
+                    />
+                </div>
             </div>
-            <div className={"flex flex-row justify-center mb-10 "}>
-                <FullCalendar
-                    initialEvents={events} // alternatively, use the `events` setting to fetch from a feed
-                    plugins={[dayGridPlugin, timeGridPlugin, momentPlugin, interactionPlugin, momentTimezonePlugin, bootstrap5Plugin]}
-                    headerToolbar={{
-                        start: 'title', // will normally be on the left. if RTL, will be on the right
-                        center: '',
-                        end: 'today prev,next' // will normally be on the right. if RTL, will be on the left
-                    }}
-                    buttonIcons={{
-                        prev: 'chevron-left',
-                        next: 'chevron-right',
-                        prevYear: 'chevrons-left', // double chevron
-                        nextYear: 'chevrons-right' // double chevron
-                    }}
-                    timeZone='Europe/Istanbul'
-                    initialView='timeGridWeek'
-                    titleFormat='MMMM D, YYYY'
-                    locale='tr'
-                    firstDay='1'
-                    //expandRows={false}
-                    height={"auto"}
-                    //  contentHeight={100}
-                    aspectRatio={2}
-                    contentHeight={400}
-                    expandRows={false}
-                    themeSystem='bootstrap5'
-                    scrollTime={'09:00:00'}
-                    slotMinTime={"09:00:00"}
-                    slotMaxTime={"21:00:00"}
-                />
-            </div>
+
         </div>
     )
 }
