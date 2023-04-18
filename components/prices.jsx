@@ -1,8 +1,7 @@
 import React from 'react'
-import { FaCheck } from 'react-icons/fa'
-import Image from 'next/image';
+
+import PriceCardBig from './UI/priceCardBig';
 import PriceCardSmall from './UI/priceCardSmall';
-import PriceCardBig from './UI/PriceCardBig';
 
 const Prices = () => {
     const data = [
@@ -74,7 +73,7 @@ const Prices = () => {
         }
     ]
     return (
-        <div name={"prices"} className={"h-screen container mx-auto px-4 select-none"}>
+        <div name={"prices"} className={"h-screen    container mx-auto px-4 select-none"}>
             <div className={"hidden sm:block sm:visible "}>
                 {/*Header*/}
                 <div className={"tracking-widest uppercase text-center mt-10"}>
