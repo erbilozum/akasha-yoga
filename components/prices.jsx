@@ -73,7 +73,7 @@ const Prices = () => {
         }
     ]
     return (
-        <div name={"prices"} className={"h-screen    container mx-auto px-4 select-none"}>
+        <div name={"prices"} className={"container mx-auto px-4 select-none"}>
             <div className={"hidden sm:block sm:visible "}>
                 {/*Header*/}
                 <div className={"tracking-widest uppercase text-center mt-10"}>
@@ -83,7 +83,7 @@ const Prices = () => {
                 {/*Content*/}
                 <div className={"flex flex-col sm:flex-row justify-center items-stretch mb-10 sm:space-x-6"}>
                     {data.map((item, index) => (
-                        <div key={index} className={"w-full sm:w-1/4 flex items-stretch mb-2"}>
+                        <div key={index} className={"w-full  sm:w-1/4 flex items-stretch mb-2"}>
                             <PriceCardBig data={item} />
                         </div>
                     ))

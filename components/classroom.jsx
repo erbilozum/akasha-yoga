@@ -26,9 +26,9 @@ const Classroom = () => {
         }
     ]
     return (
-        <div name={"classroom"} className={"container mx-auto px-4 select-none z-10"}>
+        <div name={"classroom"} className={"container mx-auto text-gray-400 select-none items-center"} >
             <div className={"tracking-widest uppercase text-center mt-10 "}>
-                <h2 className={"text-3xl font-Avanir "}>Youtube Çalışmalarımız</h2>
+                <h2 className={"text-3xl font-Avanir "}>Çalışma Gruplarımız</h2>
                 <p className={"text-sm font-Poppins"}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, enim?</p>
             </div >
             <div className={"flex flex-col items-center sm:flex-row sm:items-stretch justify-between mb-10  sm:space-x-6"}>

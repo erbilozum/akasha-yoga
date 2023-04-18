@@ -21,8 +21,9 @@ export default function Home() {
       <About />
       <Comments />
       <Prices />
-      <Schedule />
+
       <Classroom />
+      <Schedule />
       <Youtube />
       <Store />
       <Contact />
