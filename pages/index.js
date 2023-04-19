@@ -11,6 +11,7 @@ import Youtube from "@/components/youtube";
 import Store from "@/components/store";
 import Schedule from "@/components/schedule";
 import Test from "@/components/test";
+import GetOfferCard from "@/components/UI/getOfferCard";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -21,7 +22,6 @@ export default function Home() {
       <About />
       <Comments />
       <Prices />
-
       <Classroom />
       <Schedule />
       <Youtube />

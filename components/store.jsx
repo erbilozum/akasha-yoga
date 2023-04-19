@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import ProductCard from './UI/productCard';
 
 const Store = () => {
@@ -9,7 +9,7 @@ const Store = () => {
             name: "Yoga Matı",
             brand: "Akasha Brand",
             size: "60 x 183cm",
-            price: "250₺",
+            price: "250",
             imageUrl: "/store/yoga-mat-thumbnail.webp",
             imageAlt: "yoga_mat",
         },
@@ -19,7 +19,7 @@ const Store = () => {
             name: "Yoga Havlusu",
             brand: "Akasha Brand",
             size: "185 x 63cm",
-            price: "380₺",
+            price: "380",
             imageUrl: "/store/yoga-towel-thumbnail.webp",
             imageAlt: "yoga_towel"
         }
@@ -30,7 +30,7 @@ const Store = () => {
             name: "Mat Çantası",
             brand: "Akasha Brand",
             size: "89 x 48cm",
-            price: "450₺",
+            price: "450",
             imageUrl: "/store/yoga-bag-thumbnail.webp",
             imageAlt: "yoga_bag"
         },
@@ -40,7 +40,7 @@ const Store = () => {
             name: "Swing Kemeri",
             brand: "Akasha Brand",
             size: "120cm",
-            price: "600₺",
+            price: "600",
             imageUrl: "/store/yoga-swing-belt-thumbnail.webp",
             imageAlt: "yoga_swing_belt"
         },
@@ -50,7 +50,7 @@ const Store = () => {
             name: "Yoga Kemeri",
             brand: "Akasha Brand",
             size: "180cm",
-            price: "120₺",
+            price: "120",
             imageUrl: "/store/yoga-belt-thumbnail.webp",
             imageAlt: "yoga_belt"
         },
@@ -60,7 +60,7 @@ const Store = () => {
             name: "Göz Bandı",
             brand: "Akasha Brand",
             size: "29",
-            price: "95₺",
+            price: "95",
             imageUrl: "/store/yoga-eye-with-lavander-thumbnail.webp",
             imageAlt: "yoga_eye_lavander"
         }
@@ -79,6 +79,6 @@ const Store = () => {
                 ))}
             </div>
         </div>
-    )
-}
-export default Store
+    );
+};
+export default Store;

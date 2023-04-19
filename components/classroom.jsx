@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react';
 import Image from 'next/image';
 
 const Classroom = () => {
+
     const data = [
         {
             id: 1,
@@ -24,7 +25,7 @@ const Classroom = () => {
             imageUrl: "/classroom/poster-3.png",
             imageAlt: "image-3"
         }
-    ]
+    ];
     return (
         <div name={"classroom"} className={"container mx-auto text-gray-400 select-none items-center"} >
             <div className={"tracking-widest uppercase text-center mt-10 "}>
@@ -50,7 +51,7 @@ const Classroom = () => {
                 ))}
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default Classroom
+export default Classroom;
