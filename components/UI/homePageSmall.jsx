@@ -7,7 +7,7 @@ const HomePageSmall = () => {
     const data = [
         {
             id: 1,
-            imageURL: '/carousel/image2.png',
+            imageURL: '/carousel/image2.webp',
             imageAlt: "image2",
             headerTopText: 'Bayramda',
             headerSubText: 'Yoga Kampı',
@@ -23,7 +23,7 @@ const HomePageSmall = () => {
         },
         {
             id: 2,
-            imageURL: '/carousel/image3.png',
+            imageURL: '/carousel/image3.webp',
             imageAlt: "image2",
             headerTopText: '200 Saat Yoga',
             headerSubText: 'Eğitmenlik Eğitimi',
@@ -38,7 +38,7 @@ const HomePageSmall = () => {
         },
         {
             id: 3,
-            imageURL: '/carousel/image1.png',
+            imageURL: '/carousel/image1.webp',
             imageAlt: "image2",
             headerTopText: '4 Element',
             headerSubText: 'Yoga Kampı',
@@ -53,7 +53,7 @@ const HomePageSmall = () => {
         },
         {
             id: 4,
-            imageURL: '/carousel/image4.png',
+            imageURL: '/carousel/image4.webp',
             imageAlt: "image2",
             headerTopText: 'Çakralar ve Arometerapi',
             headerSubText: 'Enerji Merkezlerini Dengele',
