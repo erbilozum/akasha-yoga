@@ -6,23 +6,21 @@ const Homepage = () => {
     const data = [
         {
             id: 1,
-            imageURL: '/carousel/image2.png',
+            imageURL: '/carousel/image2.webp',
             imageAlt: "image2",
             headerTopText: 'Bayramda',
             headerSubText: 'Yoga Kampı',
             eventDate: '20-23 Nisan 2023',
             eventLocation: 'Lu Garden / İzmit',
-            rightSide:
-                [
+            rightSide:[
                     "Ashtanga Yoga",
                     "Vinyasa Yoga",
                     "Kundalini Yoga",
                     "Bikram Yoga"
                 ]
-        },
-        {
+        }, {
             id: 2,
-            imageURL: '/carousel/image3.png',
+            imageURL: '/carousel/image3.webp',
             imageAlt: "image2",
             headerTopText: '200 Saat Yoga',
             headerSubText: 'Eğitmenlik Eğitimi',
@@ -34,10 +32,9 @@ const Homepage = () => {
                     "Katılım Sertifikası",
                     "Başarı Sertifikası"
                 ]
-        },
-        {
+        }, {
             id: 3,
-            imageURL: '/carousel/image1.png',
+            imageURL: '/carousel/image1.webp',
             imageAlt: "image2",
             headerTopText: '4 Element',
             headerSubText: 'Yoga Kampı',
@@ -49,10 +46,9 @@ const Homepage = () => {
                 "Yoga Asana Pratiği (Ateş)",
                 "Enerji ve Ses Banyosu"
             ]
-        },
-        {
+        },{
             id: 4,
-            imageURL: '/carousel/image4.png',
+            imageURL: '/carousel/image4.webp',
             imageAlt: "image2",
             headerTopText: 'Çakralar ve Arometerapi',
             headerSubText: 'Enerji Merkezlerini Dengele',
@@ -68,8 +64,8 @@ const Homepage = () => {
         }
     ]
     return (
-        <div name={"home"} className="container mx-auto select-none font-Philosopher" >
-            <div className={"visible sm:hidden "}>
+        <div name={"home"} className={"container mx-auto select-none font-Philosopher"} >
+            <div className={"visible sm:hidden"}>
                 <HomePageSmall />
             </div>
             <div className={"hidden sm:visible sm:block"}>

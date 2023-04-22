@@ -1,7 +1,6 @@
 import React from "react";
 import { FaMinus, FaPlus } from "react-icons/fa";
 import { AiOutlineClose } from "react-icons/ai";
-import { BsBasket } from "react-icons/bs";
 import { FiShoppingCart } from "react-icons/fi";
 import Image from "next/image";
 import { useState } from "react";
@@ -16,7 +15,7 @@ const BasketCard = ({ isVisible, close, data }) => {
     return (
         <div className={"fixed flex-col w-full z-40 inset-0 opacity-100 backdrop-blur-sm flex raundex-xl items-center justify-center"}>
             <OutsideClickHandler onOutsideClick={() => { close(); }}>
-                <div className="bg-white flex flex-row border-2 items-center opacity-100 w-full justify-center rounded-xl select-none relative">
+                <div className={"bg-white flex flex-row border-2 items-center opacity-100 w-full justify-center rounded-xl select-none relative"}>
                     {/*Modal Close Button */}
                     <div onClick={() => close()} className={"absolute h-6 w-6 rounded-full bg-gray-200 hover:animate-pulse text-gray-700 text-xl -top-6 -right-6 items-center justify-center flex"}>
                         <AiOutlineClose className={"font-bold"} />
@@ -115,7 +114,6 @@ const BasketCard = ({ isVisible, close, data }) => {
                                         </div>
                                     </div>
                                 </div>
-
                                 <div className={"flex items-center justify-end mt-2"}>
                                     <button title={"Sepete Ekle"} className={"rounded flex px-4 py-2.5 duration-400 ease-in-out transition-all border border-indigo-400 hover:bg-white hover:text-indigo-400  bg-indigo-400 text-gray-200  justify-center items-center"}>
                                         <FiShoppingCart className={"text-sm font-bold"} />

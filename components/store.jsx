@@ -12,8 +12,7 @@ const Store = () => {
             price: "250",
             imageUrl: "/store/yoga-mat-thumbnail.webp",
             imageAlt: "yoga_mat",
-        },
-        {
+        }, {
             id: 1,
             productCode: "AKASHA-212922",
             name: "Yoga Havlusu",
@@ -22,9 +21,7 @@ const Store = () => {
             price: "380",
             imageUrl: "/store/yoga-towel-thumbnail.webp",
             imageAlt: "yoga_towel"
-        }
-        ,
-        {
+        }, {
             id: 3,
             productCode: "AKASHA-212923",
             name: "Mat Çantası",
@@ -33,8 +30,7 @@ const Store = () => {
             price: "450",
             imageUrl: "/store/yoga-bag-thumbnail.webp",
             imageAlt: "yoga_bag"
-        },
-        {
+        }, {
             id: 4,
             productCode: "AKASHA-212924",
             name: "Swing Kemeri",
@@ -43,8 +39,7 @@ const Store = () => {
             price: "600",
             imageUrl: "/store/yoga-swing-belt-thumbnail.webp",
             imageAlt: "yoga_swing_belt"
-        },
-        {
+        }, {
             id: 5,
             productCode: "AKASHA-212925",
             name: "Yoga Kemeri",
@@ -53,8 +48,7 @@ const Store = () => {
             price: "120",
             imageUrl: "/store/yoga-belt-thumbnail.webp",
             imageAlt: "yoga_belt"
-        },
-        {
+        }, {
             id: 6,
             productCode: "AKASHA-212926",
             name: "Göz Bandı",
@@ -65,15 +59,13 @@ const Store = () => {
             imageAlt: "yoga_eye_lavander"
         }
     ];
-
     return (
         <div name={"store"} className={"container mx-auto text-gray-400 select-none items-center"} >
             <div className={"tracking-widest uppercase text-center mt-10 mb-8"}>
                 <h2 className={"text-3xl font-Avanir"}>Ürünlerimiz</h2>
                 <p className={"text-sm font-Poppins"}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, enim?</p>
-            </div >
-
-            <div className='flex flex-wrap sm:flex-nowrapflex-row space-x-4 items-center justify-center font-NotoSans'>
+            </div>
+            <div className={"flex flex-wrap sm:flex-nowrapflex-row space-x-4 items-center justify-center font-NotoSans"}>
                 {data.map((item, index) => (
                     <ProductCard key={index} data={item} />
                 ))}

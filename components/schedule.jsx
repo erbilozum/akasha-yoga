@@ -8,7 +8,6 @@ import momentPlugin from '@fullcalendar/moment'
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import bootstrap5Plugin from '@fullcalendar/bootstrap5';
-import { INITIAL_EVENTS, createEventId } from './event-utils'
 
 const schedule = () => {
     const events = [
@@ -86,16 +85,14 @@ const schedule = () => {
             title: "Çiftler  Grubu"
         }
     ];
-
-
     return (
         <div name={"schedule"} className={"container mx-auto  px-4 select-none z-10 mt:96 sm:mt-0"}>
-            <div className='flex flex-col'>
+            <div className={"flex flex-col"}>
                 <div className={"tracking-widest uppercase text-center mt-10 mb-8"}>
                     <h2 className={"text-3xl font-Avanir"}>Çalışma Takvimi</h2>
                     <p className={"text-sm font-Poppins"}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, enim?</p>
                 </div>
-                <div className={"flex flex-row justify-center mb-10 "}>
+                <div className={"flex flex-row justify-center mb-10"}>
                     <FullCalendar
                         initialEvents={events} // alternatively, use the `events` setting to fetch from a feed
                         plugins={[dayGridPlugin, timeGridPlugin, momentPlugin, interactionPlugin, momentTimezonePlugin, bootstrap5Plugin]}
@@ -110,11 +107,11 @@ const schedule = () => {
                             prevYear: 'chevrons-left', // double chevron
                             nextYear: 'chevrons-right' // double chevron
                         }}
-                        timeZone='Europe/Istanbul'
-                        initialView='timeGridWeek'
-                        titleFormat='MMMM D, YYYY'
-                        locale='tr'
-                        firstDay='1'
+                        timeZone={'Europe/Istanbul'}
+                        initialView={'timeGridWeek'}
+                        titleFormat={'MMMM D, YYYY'}
+                        locale={'tr'}
+                        firstDay={'1'}
                         //expandRows={false}
                         height={"auto"}
                         //  contentHeight={100}
@@ -126,7 +123,7 @@ const schedule = () => {
                         slotMinTime={"14:00:00"}
                         slotMaxTime={"21:00:00"}
                         allDaySlot={false}
-                        allDayText='Tüm Gün'
+                        allDayText={'Tüm Gün'}
                     />
                 </div>
             </div>

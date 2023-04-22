@@ -1,5 +1,4 @@
-import React from 'react'
-
+import React from 'react';
 import PriceCardBig from './UI/priceCardBig';
 import PriceCardSmall from './UI/priceCardSmall';
 
@@ -8,7 +7,7 @@ const Prices = () => {
         {
             id: 1,
             colorCode: "#A95394",
-            imageURL: '/prices/yoga_hub1.png',
+            imageURL: '/prices/yoga_hub1.webp',
             headerTop: 'Başlangıç Seviye',
             headerSub: "8 Saat",
             items: [
@@ -19,11 +18,10 @@ const Prices = () => {
                 "Aya Selam, Güneşe Selam A ve B",
                 " Fasya, Bedenini farket ve daha teknik bilgiler."
             ]
-        },
-        {
+        }, {
             id: 2,
             colorCode: "#357A5B",
-            imageURL: '/prices/yoga_hub2.png',
+            imageURL: '/prices/yoga_hub2.webp',
             headerTop: 'Orta Seviye',
             headerSub: "8 Saat",
             items: [
@@ -37,11 +35,10 @@ const Prices = () => {
                 "Eka Pada Rajakapotasana",
                 "Virabhadrasana 3"
             ]
-        },
-        {
+        }, {
             id: 3,
             colorCode: "#F16325",
-            imageURL: '/prices/yoga_hub3.png',
+            imageURL: '/prices/yoga_hub3.webp',
             headerTop: 'İleri Seviye',
             headerSub: "8 Saat",
             items: [
@@ -55,11 +52,10 @@ const Prices = () => {
                 "Eka Pada Rajakapotasana",
                 " Virabhadrasana 3"
             ]
-        },
-        {
+        }, {
             id: 4,
             colorCode: "#1FB6EB",
-            imageURL: '/prices/yoga_hub4.png',
+            imageURL: '/prices/yoga_hub4.webp',
             headerTop: 'Online',
             headerSub: "8 Saat",
             items: [
@@ -74,7 +70,7 @@ const Prices = () => {
     ]
     return (
         <div name={"prices"} className={"container mx-auto px-4 select-none"}>
-            <div className={"hidden sm:block sm:visible "}>
+            <div className={"hidden sm:block sm:visible"}>
                 {/*Header*/}
                 <div className={"tracking-widest uppercase text-center mt-10"}>
                     <h2 className={"text-3xl font-Avanir"}>Sınıflarımız</h2>
@@ -90,7 +86,7 @@ const Prices = () => {
                     }
                 </div>
             </div>
-            <div className={"visible  sm:hidden"}>
+            <div className={"visible sm:hidden"}>
                 {/*Header*/}
                 <div className={"tracking-widest uppercase text-center mt-10"}>
                     <h2 className={"text-3xl font-Avanir"}>Sınıflarımız</h2>
@@ -102,11 +98,9 @@ const Prices = () => {
                         <div key={index} className={"w-full sm:w-1/4 flex items-stretch mb-2"}>
                             <PriceCardSmall data={item} />
                         </div>
-                    ))
-                    }
+                    ))}
                 </div>
             </div>
-
         </div >
     )
 }

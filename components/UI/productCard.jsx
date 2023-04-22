@@ -2,32 +2,27 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import Swal from 'sweetalert2';
 import withReactContent from 'sweetalert2-react-content';
-import { FaMinus, FaPlus } from 'react-icons/fa';
-import { BsBasket } from 'react-icons/bs';
 import BasketCard from './basketCard';
 
 const ProductCard = (props) => {
     const [isLoading, setIsLoading] = useState(true);
     const MySwal = withReactContent(Swal);
     const [count, setCount] = useState(1);
-
-
-
     const [showBasket, setShowBasket] = useState(false);
     const handleChangeVisible = () => {
         setShowBasket(false);
     };
     return (
-        <div className='mb-4 '>
-            <div className='group relative overflow-hidden '>
-                <div className='h-48 w-48 z-90 '>
+        <div className='mb-4'>
+            <div className='group relative overflow-hidden'>
+                <div className='h-48 w-48 z-90'>
                     <Image
                         src={props.data.imageUrl}
                         alt={props.data.imageAlt}
                         title={props.data.name}
                         placeholder={"blur"}
                         onClick={() => setShowBasket(!showBasket)}
-                        blurDataURL='/store/placeholder.png'
+                        blurDataURL={'/common/placeholder.webp'}
                         className={isLoading ? "invisible sm:block " : "text-2xl visible"}
                         height={200} width={200}
                         onLoadingComplete={() => setIsLoading(false)}

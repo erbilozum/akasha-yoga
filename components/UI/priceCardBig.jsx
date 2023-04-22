@@ -2,7 +2,6 @@ import React from 'react';
 import { FaCheck } from 'react-icons/fa';
 import Image from 'next/image';
 import { useState } from 'react';
-import GetOfferCard from '@/components/UI/getOfferCard';
 
 const PriceCardBig = (props) => {
     const [visible, setVisible] = useState(false);
@@ -10,7 +9,6 @@ const PriceCardBig = (props) => {
         setVisible(false);
     };
     return (
-
         <div className={"border h-full w-full mb-2  hover:bg-[gray-100] duration-500 ease-in-out transition-all bg-white border-gray-200 rounded-b-xl shadow-xl sm:mb-0"}>
             <div className={`h-2 w-full text-[${props.data.colorCode}] bg-[${props.data.colorCode}]`}>
             </div>
@@ -32,13 +30,11 @@ const PriceCardBig = (props) => {
                         </div>}
                 </div>
                 <div>
-                    {
-                        props.data.items.map((subItem, index) => (
+                    {props.data.items.map((subItem, index) => (
                             <div key={index} className={"flex items-center my-2"}>
                                 <FaCheck className={`text-[${props.data.colorCode}] text-sm`} />
                                 <span className={"px-2 text-gray-700 text-sm"}>{subItem}</span>
-                            </div>))
-                    }
+                        </div>))}
                 </div>
             </div>
         </div >
