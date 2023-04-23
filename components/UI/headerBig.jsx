@@ -30,11 +30,7 @@ const HeaderBig = ({ data }) => {
                         </ul>
                     </nav>
                 </div>
-                {/*Right*/}
-                <div className={"flex flex-row items-center ml-4 justify-center"}>
-                    <FaWhatsapp className={"text-xl text-gray-700  duration-500 ease-in-out transition-all hover:text-[#e7c100]"} />
-                    <a className={"flex  text-gray-700 duration-500 ease-in-out transition-all no-underline hover:text-[#e7c100] ml-2 flex-nowrap cursor-pointer"} href={"https://wa.me/+905334193264"} target={"_blank"}>0850 440 09 51</a>
-                </div>
+
             </div>
         </div>
     )
