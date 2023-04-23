@@ -3,7 +3,7 @@ export const data = [
     id: "1",
     header: "Akasha Yoga",
     description:
-      "Yoga ve kişisel gelişim konularıyla ilgili blog yazılarımızı okuyabilir, yoga pozlarını öğrenmek için videolarımızı izleyebilirsiniz.Silivri& apos;deki stüdyomuzda, her seviyede yogiye uygun derslerimiz mevcuttur.Ayrıca, özel dersler de sunuyoruz ve bu dersler, özellikle bireysel ihtiyaçları olan kişiler için tasarlanmaktadır.Bizimle birlikte yoga yaparak, bedeninizi ve zihninizi güçlendirebilir, stresi azaltabilir, daha esnek ve zinde bir vücuda sahip olabilirsiniz.",
+      "Yoga ve kişisel gelişim konularıyla ilgili blog yazılarımızı okuyabilir, yoga pozlarını öğrenmek için videolarımızı izleyebilirsiniz. Silivri'deki stüdyomuzda, her seviyede yogiye uygun derslerimiz mevcuttur. Ayrıca, özel dersler de sunuyoruz ve bu dersler, özellikle bireysel ihtiyaçları olan kişiler için tasarlanmaktadır. Bizimle birlikte yoga yaparak, bedeninizi ve zihninizi güçlendirebilir, stresi azaltabilir, daha esnek ve zinde bir vücuda sahip olabilirsiniz.",
     imageURL: "/about/about_1.webp",
     image_alt: "about_1",
   },

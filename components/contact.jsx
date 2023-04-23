@@ -35,12 +35,13 @@ const Contact = () => {
                     </div>
                 </div >
                 {/*Form*/}
-                <form className={"w-full flex flex-col items-center justify-center space-y-2"} >
-                    <input type={"text"} className={"w-full sm:w-2/6 p-1 bg-white border-fuchsia-800 border-2 select-text"} placeholder={"Full Name"} required />
-                    <input type={"email"} className={"w-full sm:w-2/6 p-1 bg-white border-fuchsia-800 border-2 select-text"} placeholder={"info@somebody.com"} required />
-                    <input type={"tel"} className={"w-full sm:w-2/6 p-1 bg-white  border-fuchsia-800 border-2 select-text"} placeholder={"0 (123) 456 78 90"} required />
+                <form action="https://getform.io/f/9e91b82f-b465-4863-88c1-253fd4c6ad1f" method="POST" className={"w-full flex flex-col items-center justify-center space-y-2"} >
+                    <input type={"text"} className={"w-full focus:outline-none sm:w-2/6 p-2 bg-white border-fuchsia-800 border-2 select-text"} placeholder={"Full Name"} required />
+                    <input type={"email"} className={"w-full focus:outline-none sm:w-2/6 p-2 bg-white border-fuchsia-800 border-2 select-text"} placeholder={"info@somebody.com"} required />
+                    <input type={"tel"} className={"w-full focus:outline-none  sm:w-2/6 p-2 bg-white  border-fuchsia-800 border-2 select-text"} placeholder={"0 (123) 456 78 90"} required />
+                    <input type={"category"} value={"Contact Request"} className={"hidden"} placeholder={"0 (123) 456 78 90"} required />
                     <div className={"flex justify-end w-full sm:w-1/3"}>
-                        <button className={"bg-fuchsia-800 hover:bg-fuchsia-700 duration-500 transition-all ease-in-out text-white tracking-wider px-2 py-1"}>Kayıt Ol</button>
+                        <button type={"submit"} className={"bg-fuchsia-800 hover:bg-fuchsia-700 duration-500 transition-all ease-in-out text-white tracking-wider px-5 py-2 rounded"}>Kayıt Ol</button>
                     </div>
                 </form >
             </div >

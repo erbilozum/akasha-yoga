@@ -12,8 +12,17 @@ import Store from "@/components/store";
 import Schedule from "@/components/schedule";
 import Sidebar from "@/components/sideBar";
 const inter = Inter({ subsets: ["latin"] });
-
+import { useEffect } from "react";
 export default function Home() {
+    useEffect(() => {
+      const handleContextMenu = (e) => {
+        e.preventDefault();
+      };
+      document.addEventListener("contextmenu", handleContextMenu);
+      return () => {
+        document.removeEventListener("contextmenu", handleContextMenu);
+      };
+    }, []);
   return (
     <main className="flex flex-col min-h-screen top-0  bg-[url('/carousel/banner-bg.jpg')] ">
       <Header />

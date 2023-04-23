@@ -20,13 +20,16 @@ const PriceCardBig = (props) => {
                     <button onClick={() => setVisible(!visible)} className={`rounded bg-[${props.data.colorCode}] text-white opacity-40 hover:opacity-80 w-full mx-4 py-2 border hover:text-gray-100 font-bold duration-500 transition ease-in-out`}>Teklif İste</button>
                     {!visible ? null :
                         <div className='visible mt-1'>
-                            <input className={`bg-white border-2 border-[${props.data.colorCode}] focus:outline-none focus:border-[${props.data.colorCode}] w-full text-gray-700 mt-2 px-2 py-2`} type="text" name="" id="" placeholder='Ad Soyad' />
-                            <input className={`bg-white border-2 border-[${props.data.colorCode}] focus:outline-none focus:border-[${props.data.colorCode}] w-full text-gray-700 mt-2 px-2 py-2`} type="tel" name="" id="" placeholder='Telefon' />
-                            <div className={`flex justify-end mt-2 hover:text-`}>
-                                <button className={`bg-[${props.data.colorCode}] text-white text-end hover:scale-110 hover:transition-all hover:ease-linear hover:duration-300 text-sm rounded px-4 py-2`}>
-                                    Gönder
-                                </button>
-                            </div>
+                            <form action="https://getform.io/f/9e91b82f-b465-4863-88c1-253fd4c6ad1f" method="POST">
+                                <input name={"fullName"} className={`bg-white border-2 border-[${props.data.colorCode}] focus:outline-none focus:border-[${props.data.colorCode}] w-full text-gray-700 mt-2 px-2 py-2`} type="text" id="txtFullName" placeholder='Ad Soyad' />
+                                <input name={"phone"} className={`bg-white border-2 border-[${props.data.colorCode}] focus:outline-none focus:border-[${props.data.colorCode}] w-full text-gray-700 mt-2 px-2 py-2`} type="tel" id="txtPhone" placeholder='Telefon' />
+                                <input name={"category"} className={'hidden'} value={props.data.headerTop} />
+                                <div className={`flex justify-end mt-2 hover:text-`}>
+                                    <button type="submit" className={`bg-[${props.data.colorCode}] text-white text-end hover:scale-110 hover:transition-all hover:ease-linear hover:duration-300 text-sm rounded px-4 py-2`}>
+                                        Gönder
+                                    </button>
+                                </div>
+                            </form>
                         </div>}
                 </div>
                 <div>
@@ -40,5 +43,4 @@ const PriceCardBig = (props) => {
         </div >
     );
 };
-
 export default PriceCardBig;

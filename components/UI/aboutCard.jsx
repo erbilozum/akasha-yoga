@@ -21,7 +21,7 @@ const AboutCard = ({ data }) => {
                             height={200} />
                     </div>
                     <div className={"w-4/6 sm:w-5/6 px-1 text-sm sm:text-xl"}>
-                        <span className={"p-6 justify-between"}>
+                        <span className={"p-6 flex text-justify"}>
                             {data.description}
                         </span>
                     </div>
