@@ -30,7 +30,6 @@ const HeaderBig = ({ data }) => {
                         </ul>
                     </nav>
                 </div>
-
             </div>
         </div>
     )
