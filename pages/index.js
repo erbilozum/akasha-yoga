@@ -10,6 +10,7 @@ import Homepage from "@/components/homepage";
 import Youtube from "@/components/youtube";
 import Store from "@/components/store";
 import Schedule from "@/components/schedule";
+import Sidebar from "@/components/sideBar";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
     <main className="flex flex-col min-h-screen top-0  bg-[url('/carousel/banner-bg.jpg')] ">
       <Header />
       <Homepage />
+      <Sidebar />
       <About />
       <Comments />
       <Prices />

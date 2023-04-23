@@ -17,13 +17,13 @@ const BasketCard = ({ isVisible, close, data }) => {
             <OutsideClickHandler onOutsideClick={() => { close(); }}>
                 <div className={"bg-white flex flex-row border-2 items-center opacity-100 w-full justify-center rounded-xl select-none relative"}>
                     {/*Modal Close Button */}
-                    <div onClick={() => close()} className={"absolute h-6 w-6 rounded-full bg-gray-200 hover:animate-pulse text-gray-700 text-xl -top-6 -right-6 items-center justify-center flex"}>
+                    <div onClick={() => close()} className={"absolute h-8 w-8 rounded-full bg-gray-200 hover:animate-pulse text-gray-700 text-xl -top-3 -right-3 items-center justify-center flex"}>
                         <AiOutlineClose className={"font-bold"} />
                     </div>
                     {/*Modal Content */}
                     <div className={"flex flex-col w-full"}>
                         {/*Header Text */}
-                        <div className={"text-md font-gray-700 text-start p-2 font-bold"}>
+                        <div className={"text-md text-gray-900 text-start p-2 font-bold"}>
                             <span>Sepete Ekle</span>
                         </div>
                         {/*Content*/}
@@ -109,13 +109,13 @@ const BasketCard = ({ isVisible, close, data }) => {
                                         </div>
                                     </div>
                                     <div className={"text-xl w-24 p-2  flex items-center justify-center"}>
-                                        <div className={"border-2 p-2 rounded-xl border-dashed"}>
+                                        <div className={"border-2 border-indigo-500 p-2 text-indigo-500 rounded-xl border-dashed"}>
                                             <span>{Number(data.price) * Number(count)}₺</span>
                                         </div>
                                     </div>
                                 </div>
                                 <div className={"flex items-center justify-end mt-2"}>
-                                    <button title={"Sepete Ekle"} className={"rounded flex px-4 py-2.5 duration-400 ease-in-out transition-all border border-indigo-400 hover:bg-white hover:text-indigo-400  bg-indigo-400 text-gray-200  justify-center items-center"}>
+                                    <button title={"Sepete Ekle"} className={"rounded flex px-4 py-2.5 duration-400 ease-in-out transition-all border-2 border-indigo-400 hover:bg-white hover:text-indigo-400 hover:border-indigo-500  bg-indigo-400 text-gray-200  justify-center items-center"}>
                                         <FiShoppingCart className={"text-sm font-bold"} />
                                         <span className={"px-1 text-sm"}>Sepete Ekle</span>
                                     </button>

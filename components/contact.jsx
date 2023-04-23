@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from "next/image";
-
+import { data } from "/components/Data/contactData";
 const Contact = () => {
     return (
         <div name={"contact"} className={"container mx-auto text-gray-400 select-none items-center"} >
@@ -18,17 +18,17 @@ const Contact = () => {
                     </div>
                     <div className={"flex flex-row space-x-2 ml-4 text-2xl items-center justify-center"}>
                         <div className={"hover:scale-110 duration-500 transition-all ease-in-out"}>
-                            <a href={"https://www.facebook.com/ozgekucukkayayoga"} target={"_blank"} rel={"noopener noreferrer"}>
+                            <a href={data.facebookURL} target={"_blank"} rel={"noopener noreferrer"}>
                                 <Image src={"/logos/logo-facebook.png"} alt={"facebook"} title={"facebook"} width={30} height={30} />
                             </a>
                         </div>
                         <div className={"hover:scale-110 duration-500 transition-all ease-in-out"}>
-                            <a href={"https://www.instagram.com/akashayoga.tr"} target={"_blank"} rel={"noopener noreferrer"}>
+                            <a href={data.instagramURL} target={"_blank"} rel={"noopener noreferrer"}>
                                 <Image src={"/logos/logo-instagram.png"} alt={"instagram"} title={"instagram"} width={30} height={30} />
                             </a>
                         </div>
                         <div className={"hover:scale-110 duration-500 transition-all ease-in-out"}>
-                            <a href={"https://www.youtube.com/@OzgeKucukkaya"} target={"_blank"} rel={"noopener noreferrer"}>
+                            <a href={data.youtubeURL} target={"_blank"} rel={"noopener noreferrer"}>
                                 <Image src={"/logos/logo-youtube.png"} alt={"youtube"} title={"youtube"} width={30} height={30} />
                             </a>
                         </div>
@@ -47,25 +47,25 @@ const Contact = () => {
             {/*Working Days */}
             < div className={"flex flex-col font-NotoSans"}>
                 <div>
-                    <p className={"text-lg text-center mt-10 font-bold"}>Çalışma Saatleri: Pazartesi-Cuma 10:00-19:00</p>
+                    <p className={"text-lg text-center mt-10 font-bold"}>Çalışma Saatleri: {data.workingHours}</p>
                     <p className={"text-sm text-center"}>Eğer telefon ile ulaşamazsanız lütfen sms, WhatsApp veya e-posta ile iletişime geçiniz.</p>
                 </div>
                 <div className={"flex flex-col sm:flex-row mt-10 mb-10 text-center justify-center"}>
                     <div className={"flex flex-col font-bold text-xs w-full text-center sm:text-start sm:w-1/6 uppercase"}>
-                        <span>Akasha Yoga Merkez</span>
+                        <span>{data.company}</span>
                     </div>
                     <div className={"flex flex-col text-xs w-full text-center sm:text-start sm:w-1/6"}>
-                        <span>Özge KÜÇÜKKAYA, +90 5334193264 </span>
-                        <span className={"mt-2"}>info@akashayoga.com.tr</span>
+                        <span>{data.owner}, {data.phone} </span>
+                        <span className={"mt-2"}>{data.mail}</span>
                     </div>
                     <div className={"flex text-xs w-full text-center sm:text-start sm:w-1/6"}>
-                        <span>Bayburtlu İnsaat Satıs ofisi karsısı, Dream of, 34582 Silivri/İstanbul </span>
+                        <span>{data.address}</span>
                     </div>
                 </div>
             </div >
             {/*Google Maps*/}
             < div className={"mt-10"} >
-                <iframe src={"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1503.6274674320698!2d28.246744492121582!3d41.08527619933161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b53b5945f85b85%3A0x40d61b65c30a5d6a!2sAkasha%20Yoga%20Studio!5e0!3m2!1str!2str!4v1681165562498!5m2!1str!2str"} style={{ border: 0, width: "100%", height: "40vh" }} allowfullscreen={"true"} loading={"lazy"} referrerpolicy={"no - referrer - when - downgrade"}></iframe>
+                <iframe src={data.googleMapsURL} style={{ border: 0, width: "100%", height: "40vh" }} allowfullscreen={"true"} loading={"lazy"} referrerpolicy={"no - referrer - when - downgrade"}></iframe>
             </div >
         </div >
     )

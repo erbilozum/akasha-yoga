@@ -11,13 +11,13 @@ const Footer = () => {
                 </div>
                 <div className={"flex flex-row mt-4 space-x-2"}>
                     <Link activeClass={"active"} to={"homepage"} spy={true} smooth={true} offset={50} duration={800} >
-                        <a className={"decoration-0 text-gray-400 no-underline hover:text-[#e7c100] duration-500 ease-in-out transition-all"}>Etkinlikler</a>
+                        <span className={"decoration-0 text-gray-400 no-underline hover:text-[#e7c100] duration-500 ease-in-out transition-all"}>Etkinlikler</span>
                     </Link>
                     <Link activeClass={"active"} to={"classroom"} spy={true} smooth={true} offset={50} duration={800} >
-                        <a className={"decoration-0  text-gray-400 no-underline hover:text-[#e7c100] duration-500 ease-in-out transition-all"} >Dersler</a>
+                        <span className={"decoration-0  text-gray-400 no-underline hover:text-[#e7c100] duration-500 ease-in-out transition-all"} >Dersler</span>
                     </Link>
                     <Link activeClass={"active"} to={"prices"} spy={true} smooth={true} offset={50} duration={800} >
-                        <a className={"decoration-0 text-gray-400 no-underline hover:text-[#e7c100] duration-500 ease-in-out transition-all"}>Sınıflar</a>
+                        <span className={"decoration-0 text-gray-400 no-underline hover:text-[#e7c100] duration-500 ease-in-out transition-all"}>Sınıflar</span>
                     </Link>
                 </div>
                 <div className={"flex flex-row space-x-2 mt-4 justify-between"}>
