@@ -9,7 +9,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import bootstrap5Plugin from '@fullcalendar/bootstrap5';
 
-const ScheduleCard = ({ data }) => {
+const ScheduleCard = ({data}) => {
     return (
         <div className={"flex flex-row justify-center mb-10"}>
             <FullCalendar

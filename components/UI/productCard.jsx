@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import Image from 'next/image';
 import Swal from 'sweetalert2';
 import withReactContent from 'sweetalert2-react-content';
@@ -38,7 +38,7 @@ const ProductCard = (props) => {
                 <span className={"text-sm"}>Ebatlar:{props.data.size}</span>
                 <div className={"flex w-1/6 border-b mt-2 border-gray-700"}></div>
                 <span className={"text-sm"}>{props.data.price}₺</span>
-                <BasketCard data={props.data} isVisible={showBasket} close={handleChangeVisible} />
+                <BasketCard data={props.data} isVisible={showBasket} close={handleChangeVisible}/>
             </div>
         </div>
     );

@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 
-const AboutCard = ({ data }) => {
+const AboutCard = ({data}) => {
     const style = {
         height: 300,
     };
@@ -18,7 +18,7 @@ const AboutCard = ({ data }) => {
                             src={data.imageURL}
                             alt={data.image_alt}
                             width={200}
-                            height={200} />
+                            height={200}/>
                     </div>
                     <div className={"w-4/6 sm:w-5/6 px-1 "}>
                         <span className={"p-6 flex text-justify text-sm sm:text-md leading-1 sm:leading-8"}>
@@ -27,7 +27,7 @@ const AboutCard = ({ data }) => {
                     </div>
                 </div>
             </div>
-        </div >
+        </div>
     );
 };
 
