@@ -1,7 +1,7 @@
 import React from 'react';
+import ScheduleCard from "@/components/UI/scheduleCard";
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import ScheduleCard from './UI/scheduleCard';
 import {data} from "./Data/scheduleData.js";
 
 const schedule = () => {
