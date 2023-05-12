@@ -3,7 +3,6 @@ import FullCalendar from '@fullcalendar/react';
 import dayGridPlugin from '@fullcalendar/daygrid';
 import timeGridPlugin from '@fullcalendar/timegrid';
 import interactionPlugin from '@fullcalendar/interaction';
-//import momentPlugin from '@fullcalendar/moment';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import bootstrap5Plugin from '@fullcalendar/bootstrap5';
@@ -13,7 +12,7 @@ const ScheduleCard = ({data}) => {
         <div className={"flex flex-row justify-center mb-10"}>
             <FullCalendar
                 events={data} // alternatively, use the `events` setting to fetch from a feed
-                plugins={[dayGridPlugin, timeGridPlugin, momentPlugin, interactionPlugin, momentTimezonePlugin, bootstrap5Plugin]}
+                plugins={[dayGridPlugin, timeGridPlugin,  interactionPlugin,  bootstrap5Plugin]}
                 headerToolbar={{
                     start: 'title', // will normally be on the left. if RTL, will be on the right
                     center: '',
