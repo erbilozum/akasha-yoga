@@ -3,8 +3,7 @@ import FullCalendar from '@fullcalendar/react';
 import dayGridPlugin from '@fullcalendar/daygrid';
 import timeGridPlugin from '@fullcalendar/timegrid';
 import interactionPlugin from '@fullcalendar/interaction';
-import momentTimezonePlugin from '@fullcalendar/moment-timezone';
-import momentPlugin from '@fullcalendar/moment';
+//import momentPlugin from '@fullcalendar/moment';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import bootstrap5Plugin from '@fullcalendar/bootstrap5';
@@ -26,7 +25,7 @@ const ScheduleCard = ({data}) => {
                     prevYear: 'chevrons-left', // double chevron
                     nextYear: 'chevrons-right' // double chevron
                 }}
-                timeZone={'Europe/Istanbul'}
+               // timeZone={'Europe/Istanbul'}
                 initialView={'timeGridWeek'}
                 titleFormat={'MMMM D, YYYY'}
                 locale={'tr'}
