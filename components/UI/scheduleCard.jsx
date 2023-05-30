@@ -13,6 +13,7 @@ const ScheduleCard = ({data}) => {
     return (
         <div className={"flex flex-row justify-center mb-10"}>
             <FullCalendar
+
                 events={data} // alternatively, use the `events` setting to fetch from a feed
                 plugins={[dayGridPlugin, timeGridPlugin, momentPlugin, interactionPlugin, momentTimezonePlugin, bootstrap5Plugin]}
                 headerToolbar={{
